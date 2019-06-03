@@ -14,8 +14,7 @@ const ScrollLink = styled.span`
   left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
-
-  @media only screen and (max-width: 1100px) {
+  @media (max-width: 1100px) {
     display: none;
   }
 `
