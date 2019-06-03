@@ -7,12 +7,13 @@ import { useScroll, useWindowSize } from "../../hooks"
 import Fade from "react-reveal/Fade"
 // Styled Components
 import styled from "styled-components"
+// Helpers
+import { getResponsiveSizeButton } from "../../helpers"
 
 const ContainerFirstPage = styled.div`
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-
   @media (max-width: 1100px) {
     display: flex;
     flex-direction: column;
@@ -28,6 +29,7 @@ const ContainerFirstPageText = styled.div`
   padding-left: 7%;
   @media (max-width: 1100px) {
     padding-left: 0;
+    margin-top: 10%;
   }
 `
 
@@ -87,22 +89,16 @@ export const FirstPage = () => {
               }`}
             >
               <Button
-                className={`is-primary ${
-                  windowSize.width && windowSize.width <= 1100
-                    ? "is-medium"
-                    : "is-large"
-                }`}
+                className={`is-primary ${windowSize.width &&
+                  getResponsiveSizeButton(windowSize.width)}`}
                 to="https://github.com/Matth10"
               >
                 <Icon name="fa-lg fa-github" className="is-large" />
                 <span>Github</span>
               </Button>
               <Button
-                className={`is-primary ${
-                  windowSize.width && windowSize.width <= 1100
-                    ? "is-medium"
-                    : "is-large"
-                }`}
+                className={`is-primary ${windowSize.width &&
+                  getResponsiveSizeButton(windowSize.width)}`}
                 to="https://www.linkedin.com/in/matthew-atkinson-b350a4130/?locale=en_US"
               >
                 <Icon name="fa-lg fa-linkedin-in" className="is-large" />
