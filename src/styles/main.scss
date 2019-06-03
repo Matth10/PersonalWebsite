@@ -1,0 +1,29 @@
+@charset "utf-8";
+@import "./__variables.scss";
+@import "./section.scss";
+@import "./flexbox.scss";
+@import "./border.scss";
+@import "./media-queries.scss";
+// Import a Google Font
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+// Update Bulma's global variables
+$family-sans-serif: "Montserrat", sans-serif;
+$primary: $blue-lighting;
+$text: $dark-light;
+$white-bis: $white-blue;
+$body-background-color: $white-blue !default;
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@import "../../node_modules/bulma/bulma.sass";
+@import "../../node_modules/bulma-timeline/dist/css/bulma-timeline.sass";
