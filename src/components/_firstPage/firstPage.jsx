@@ -1,6 +1,14 @@
 import React from "react"
 // Components
-import { Button, RefContext, Image, ScrollerIcon, Icon } from "../../components"
+import {
+  Button,
+  RefContext,
+  Image,
+  ScrollerIcon,
+  Icon,
+  LineBreaker,
+  Buttons,
+} from "../../components"
 // Hooks
 import { useScroll, useWindowSize } from "../../hooks"
 // Animation
@@ -14,6 +22,7 @@ const ContainerFirstPage = styled.div`
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+  height: 100%;
   @media (max-width: 1100px) {
     display: flex;
     flex-direction: column;
@@ -61,6 +70,14 @@ const SubtitleTitleFirstPage = styled.p`
   }
 `
 
+const BackgroundImage = styled.div`
+  background: url(${require("../../images/surf.svg")}) no-repeat right top;
+  background-size: contain;
+  width: 100%;
+  flex: 1.5;
+  height: 100%;
+`
+
 export const FirstPage = () => {
   const { refAboutMe } = React.useContext(RefContext)
   const windowSize = useWindowSize()
@@ -71,17 +88,23 @@ export const FirstPage = () => {
     }
   }
   return (
-    <section style={{ padding: "0 0 20em 0" }}>
+    <section
+      style={{
+        margin: "0 0 15em 0",
+        padding: 0,
+        height: windowSize.height ? windowSize.height : "auto",
+      }}
+    >
       <ContainerFirstPage>
-        <Image imgSource={require("../../images/surf.svg")} />
+        <BackgroundImage />
         <ContainerFirstPageText>
           <Fade left>
             <TitleFirstPage>Hi!</TitleFirstPage>
             <SubtitleTitleFirstPage>
               I'm Matthew Atkinson
-              <br /> a Frontend Developer
+              <LineBreaker /> a Frontend Engineer
             </SubtitleTitleFirstPage>
-            <div
+            <Buttons
               className={`buttons ${
                 windowSize.width && windowSize.width <= 1100
                   ? " is-centered"
@@ -104,7 +127,7 @@ export const FirstPage = () => {
                 <Icon name="fa-lg fa-linkedin-in" className="is-large" />
                 <span>Linkedin</span>
               </Button>
-            </div>
+            </Buttons>
           </Fade>
         </ContainerFirstPageText>
       </ContainerFirstPage>
