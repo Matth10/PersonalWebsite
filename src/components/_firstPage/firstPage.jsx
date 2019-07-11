@@ -17,6 +17,8 @@ import Fade from "react-reveal/Fade"
 import styled from "styled-components"
 // Helpers
 import { getResponsiveSizeButton } from "../../helpers"
+// Images
+import SurfImg from "../../images/surf.svg"
 
 const ContainerFirstPage = styled.div`
   display: flex;
@@ -71,7 +73,7 @@ const SubtitleTitleFirstPage = styled.p`
 `
 
 const BackgroundImage = styled.div`
-  background: url(${require("../../images/surf.svg")}) no-repeat right top;
+  background: url(${SurfImg}) no-repeat right top;
   background-size: contain;
   width: 100%;
   flex: 1.5;
@@ -81,7 +83,7 @@ const BackgroundImage = styled.div`
 export const FirstPage = () => {
   const { refAboutMe } = React.useContext(RefContext)
   const windowSize = useWindowSize()
-
+  console.log(windowSize)
   const scrollToAboutMe = () => {
     if (refAboutMe && refAboutMe.current) {
       useScroll(refAboutMe, refAboutMe.current.offsetTop - 178 / 2)
@@ -92,7 +94,7 @@ export const FirstPage = () => {
       style={{
         margin: "0 0 15em 0",
         padding: 0,
-        height: windowSize.height ? windowSize.height : "auto",
+        height: windowSize.height ? windowSize.height : "100%",
       }}
     >
       <ContainerFirstPage>
