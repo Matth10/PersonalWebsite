@@ -19,9 +19,13 @@ export const useWindowSize = () => {
       setWindowSize(getSize())
     }
 
+    if (!windowSize.height || !windowSize.height) {
+      handleResize()
+    }
+
     window.addEventListener("resize", handleResize)
     return () => window.removeEventListener("resize", handleResize)
-  }, [])
+  }, [isClient])
 
   return windowSize
 }
