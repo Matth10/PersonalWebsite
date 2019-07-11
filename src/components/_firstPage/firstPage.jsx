@@ -83,7 +83,7 @@ const BackgroundImage = styled.div`
 export const FirstPage = () => {
   const { refAboutMe } = React.useContext(RefContext)
   const windowSize = useWindowSize()
-  console.log(windowSize)
+
   const scrollToAboutMe = () => {
     if (refAboutMe && refAboutMe.current) {
       useScroll(refAboutMe, refAboutMe.current.offsetTop - 178 / 2)
@@ -94,7 +94,7 @@ export const FirstPage = () => {
       style={{
         margin: "0 0 15em 0",
         padding: 0,
-        height: windowSize.height ? windowSize.height : "100%",
+        height: windowSize.height,
       }}
     >
       <ContainerFirstPage>
