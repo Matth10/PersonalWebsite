@@ -94,7 +94,7 @@ export const FirstPage = () => {
       style={{
         margin: "0 0 15em 0",
         padding: 0,
-        height: window.innerHeight,
+        height: windowSize.height ? windowSize.height : "100%",
       }}
     >
       <ContainerFirstPage>
