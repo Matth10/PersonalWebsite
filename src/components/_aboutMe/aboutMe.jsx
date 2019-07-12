@@ -36,11 +36,14 @@ export const AboutMe = () => {
         </h5>
         <p className="has-text-white-bis is-size-5">
           Passionate about new technologies since my childhood, I decided to
-          start my training at the ESIR engineering school, in the Internet of
-          Things, security, smart cities. During these 5 years, I did
-          internships in different companies as a web developer. These
+          study software engineering at ESIR in Rennes, France, specialized in
+          Internet of Things, security, smart cities. During these 5 years, I
+          did internships in different companies as a web developer. These
           professional experiences allowed me to acquire good practices in
-          application development, but also teamwork and communication.
+          application development, but also teamwork and communication. It also
+          increased my passion for web development and pushed me to be more
+          active in the developers community by attending conferences, meetings,
+          but also contributing to an open source project
         </p>
       </ContainerAboutMe>
     </section>
