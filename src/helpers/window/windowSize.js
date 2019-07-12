@@ -1,5 +1,5 @@
 export const getResponsive = width => {
-  if (width <= 1100 && width > 411) {
+  if (width <= 1022 && width > 411) {
     return "tablet"
   }
   if (width <= 411) {

@@ -25,7 +25,7 @@ const ContainerFirstPage = styled.div`
   flex-direction: row-reverse;
   align-items: center;
   height: 100%;
-  @media (max-width: 1100px) {
+  @media (max-width: 1022px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,7 +38,7 @@ const ContainerFirstPageText = styled.div`
   flex-direction: column;
   flex: 1;
   padding-left: 7%;
-  @media (max-width: 1100px) {
+  @media (max-width: 1022px) {
     padding-left: 0;
     margin-top: 10%;
   }
@@ -49,7 +49,7 @@ const TitleFirstPage = styled.h1`
   font-weight: 600;
   line-height: 1.125;
   font-size: 70px;
-  @media (max-width: 1100px) {
+  @media (max-width: 1022px) {
     font-size: 50px;
   }
   @media (max-width: 411px) {
@@ -78,6 +78,9 @@ const BackgroundImage = styled.div`
   width: 100%;
   flex: 1.5;
   height: 100%;
+  @media (max-width: 411px) {
+    flex: 1;
+  }
 `
 
 export const FirstPage = () => {
@@ -108,7 +111,7 @@ export const FirstPage = () => {
             </SubtitleTitleFirstPage>
             <Buttons
               className={`buttons ${
-                windowSize.width && windowSize.width <= 1100
+                windowSize.width && windowSize.width <= 1022
                   ? " is-centered"
                   : ""
               }`}
