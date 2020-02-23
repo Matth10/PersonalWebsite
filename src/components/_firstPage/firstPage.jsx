@@ -3,7 +3,6 @@ import React from "react"
 import {
   Button,
   RefContext,
-  Image,
   ScrollerIcon,
   Icon,
   LineBreaker,
@@ -89,9 +88,10 @@ export const FirstPage = () => {
 
   const scrollToAboutMe = () => {
     if (refAboutMe && refAboutMe.current) {
-      useScroll(refAboutMe, refAboutMe.current.offsetTop - 178 / 2)
+      window.scroll(0,refAboutMe.current.offsetTop - 178 / 2 )
     }
   }
+
   return (
     <section
       style={{
