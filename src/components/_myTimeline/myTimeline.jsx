@@ -105,6 +105,13 @@ export const MyTimeline = () => (
           <p>Finishing ESIR</p>
         </Timeline.Content>
       </Timeline.Item>
+      <Timeline.Item>
+        <Timeline.Marker />
+        <Timeline.Content>
+          <p className="heading">October 2019, present</p>
+          <p>Frontend engineer, at OllieOrder</p>
+        </Timeline.Content>
+      </Timeline.Item>
       <Timeline.Header>
         <Tag
           className="is-rounded is-large has-text-weight-semibold has-text-white-bis"
