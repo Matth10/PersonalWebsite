@@ -28,9 +28,9 @@ export const MySkills = () => (
               <Card.Title style={{ marginTop: "15px" }}>Frontend</Card.Title>
               <Card.Text>
                 Javascript - Typescript
-                <br /> ReactJS - Redux
-                <br /> Angular
-                <br /> CSS - Sass
+                <br /> ReactJS, Vue
+                <br /> Apollo
+                <br /> CSS - Sass - Styled Component
                 <br /> HTML
               </Card.Text>
             </Card>
@@ -51,7 +51,8 @@ export const MySkills = () => (
               <Card.Text>
                 Agile methodes <br />
                 Git <br />
-                Testing <br />
+                Testing (Jest, Cypress)
+                <br />
                 Npm, Webpack
               </Card.Text>
             </Card>
