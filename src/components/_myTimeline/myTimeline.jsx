@@ -71,14 +71,14 @@ export const MyTimeline = () => (
         <Timeline.Marker />
         <Timeline.Content>
           <p className="heading">June 2018, 3 months</p>
-          <p>Web developer, Intership at Smartmoov</p>
+          <p>Software Engineer, Intership at Smartmoov</p>
         </Timeline.Content>
       </Timeline.Item>
       <Timeline.Item>
         <Timeline.Marker />
         <Timeline.Content>
           <p className="heading">September 2018, 4 months</p>
-          <p>Web developer, Co-op programm at Tech4Race</p>
+          <p>Software Engineer, Co-op programm at Tech4Race</p>
         </Timeline.Content>
       </Timeline.Item>
       <Timeline.Header>
@@ -95,14 +95,14 @@ export const MyTimeline = () => (
         <Timeline.Marker />
         <Timeline.Content>
           <p className="heading">January 2019, 6 months</p>
-          <p>Web developer, Co-op programm at Zenika</p>
+          <p>Software Engineer, Co-op programm at Zenika</p>
         </Timeline.Content>
       </Timeline.Item>
       <Timeline.Item>
         <Timeline.Marker />
         <Timeline.Content>
           <p className="heading">September 2019</p>
-          <p>Finishing ESIR</p>
+          <p>Graduate from ESIR</p>
         </Timeline.Content>
       </Timeline.Item>
       <Timeline.Item>
